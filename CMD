@@ -1,0 +1,14 @@
+indexmaker --output /usr/local/www/mrtg/index.html /usr/local/etc/mrtg/mrtg.cfg
+touch /var/log/mrtg.log
+chown mrtg:mrtg /var/log/mrtg
+apachectl configtest
+apachectl start
+mrtg /usr/local/etc/mrtg/mrtg.cfg
+mrtg /usr/local/etc/mrtg/mrtg.cfg
+mrtg /usr/local/etc/mrtg/mrtg.cfg
+mkdir -p /var/log/apache
+mkdir -p /usr/local/www/mrtg
+chown -R www:www /var/log/apache
+chown -R mrtg:mrtg /usr/local/www/mrtg
+
+
