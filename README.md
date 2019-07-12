@@ -1,6 +1,7 @@
 # mysql
 Bastille Jail MRTG Template
 
+ STATUS:  Testing
 
 After this is built you need to add the hosts you want to monitor to MRTG
 
